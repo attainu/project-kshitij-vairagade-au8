@@ -7,7 +7,7 @@ SLEEP_BETWEEN_ACTIONS = 1
 MAX_VAL = 100
 DICE_FACE = 6
 
-# snake takes you down from 'key' to 'value'
+# s takes you down from 'key' to 'value'
 s = {
     8: 4,
     18: 1,
