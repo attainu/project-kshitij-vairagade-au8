@@ -89,7 +89,7 @@ def welcome_msg():
       13. There could be another snake/ladder at the tail of the snake or the end position of the ladder and the piece should go up/down accordingly.
 
 
-    """
+    """"
     print(msg)
 
 
