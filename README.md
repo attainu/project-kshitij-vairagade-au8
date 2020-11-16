@@ -27,11 +27,11 @@ Working of Application:
 2. Input the player names
 3. Collect their names
 4. Working of app until one player is winning do the following steps :-
-     a. Roll the dice
-     b. Move the player forward as the the dice roll has diplayed the value
-     c. If the player is stopping on any snake's head on the board it will go down directly to snale's tail on whichever number it's tail is present.
-     d. If the player is stopping on any ladder's bottom on the board it will directly go up to it's top. 
-     e. If no such dice roll comes continue to play the game till it's over.
+     a) Roll the dice
+     b) Move the player forward as the the dice roll has diplayed the value
+     c) If the player is stopping on any snake's head on the board it will go down directly to snale's tail on whichever number it's tail is present.
+     d) If the player is stopping on any ladder's bottom on the board it will directly go up to it's top. 
+     e) If no such dice roll comes continue to play the game till it's over.
   5. Thank you message
 
-The project is solely created using Python programming language
+The project is solely created using Python programming language.
