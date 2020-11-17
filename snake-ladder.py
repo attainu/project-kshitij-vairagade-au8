@@ -70,7 +70,7 @@ ladder_jump = [
 
 def welcome_msg():
     msg = """
-    Welcome to Snake and Ladder Game -->
+    Welcome to Snake and Ladder Game --->
     Rules:
       1. The board will have 100 cells numbered from 1 to 100.
       2. The game will have a six sided dice numbered from 1 to 6 and will always give a random number on rolling it.
