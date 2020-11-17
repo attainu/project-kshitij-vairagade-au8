@@ -20,7 +20,7 @@ Entities used:
 1. Players
 2. Snake
 3. Ladder
-4. Snake And LadderBoard
+4. Snake And Ladder Board
 
 Working of Application:
 1. Welcome Message Display
@@ -28,7 +28,7 @@ Working of Application:
 3. Collect their names
 4. Working of app until one player is winning do the following steps :-
      a) Roll the dice
-     b) Move the player forward as thethe dice roll has diplayed the value
+     b) Move the player forward as the dice roll has diplayed the value
      c) If the player is stopping on any snake's head on the board it will go down directly to snake's tail on whichever number it's tail is present.
      d) If the player is stopping on any ladder's bottom on the board it will directly go up to it's top. 
      e) If no such dice roll comes continue to play the game till it's over.
