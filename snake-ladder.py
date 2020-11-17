@@ -42,7 +42,7 @@ l = {
     88: 91
 }
 
-player_turn_text = [
+turn_of_player = [
     "Your turn.",
     "Go.",
     "Please proceed.",
@@ -51,20 +51,21 @@ player_turn_text = [
     "",
 ]
 
-snake_bite = [
-    "boohoo",
+bite_of_snake = [
+    "Yeah! I am a snake",
     "bummer",
     "snake bite",
+    "you won't survive",
     "oh no",
     "dang"
 ]
 
-ladder_jump = [
+jump_of_ladder = [
     "woohoo",
     "woww",
     "nailed it",
     "oh my God...",
-    "yaayyy"
+    "yaayyy",
 ]
 
 
@@ -109,13 +110,13 @@ def get_dice_value():
     return dice_value
 
 
-def snake_bite(old_value, present_value, player_name):
-    print("\n" + random.choice(snake_bite).upper() + " ~~~~~~~~?")
+def got_bite_of_snake(old_value, present_value, player_name):
+    print("\n" + random.choice(bite_of_snake).upper() + " ~~~~~~~~?")
     print("\n" + player_name + " got a snake bite. Down from " + str(old_value) + " to " + str(present_value))
 
 
 def lad_jump(old_value, present_value, player_name):
-    print("\n" + random.choice(ladder_jump).upper() + " ########")
+    print("\n" + random.choice(jump_of_ladder).upper() + " ########")
     print("\n" + player_name + " climbed the ladder from " + str(old_value) + " to " + str(present_value))
 
 
@@ -131,7 +132,7 @@ def snake_ladder(player_name, present_value, dice_value):
     print("\n" + player_name + " moved from " + str(old_value) + " to " + str(present_value))
     if present_value in s:
         final_value = s.get(present_value)
-        snake_bite(present_value, final_value, player_name)
+        got_bite_of_snake(present_value, final_value, player_name)
 
     elif present_value in l:
         final_value = l.get(present_value)
@@ -163,7 +164,7 @@ def start():
 
     while True:
         time.sleep(SLEEP_BETWEEN_ACTIONS)
-        input_1 = input("\n" + player1_name + ": " + random.choice(player_turn_text) + " Hit enter to roll the dice: ")
+        input_1 = input("\n" + player1_name + ": " + random.choice(turn_of_player) + " Hit enter to roll the dice: ")
         print("\nDice is Rolling...")
         dice_value = get_dice_value()
         time.sleep(SLEEP_BETWEEN_ACTIONS)
@@ -172,7 +173,7 @@ def start():
 
         check_win(player1_name, player1_current_position)
 
-        input_2 = input("\n" + player2_name + ": " + random.choice(player_turn_text) + " Hit enter to roll the dice: ")
+        input_2 = input("\n" + player2_name + ": " + random.choice(turn_of_player) + " Hit enter to roll the dice: ")
         print("\nDice is Rolling...")
         dice_value = get_dice_value()
         time.sleep(SLEEP_BETWEEN_ACTIONS)
